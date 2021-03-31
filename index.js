@@ -48,7 +48,7 @@ async function findPullRequests(org, repo, state) {
 
 function formatPullRequests(pullRequests) {
   return pullRequests.reduce(
-    (acc, { url, user }) => acc.concat(`${user.login} ${url}`),
+    (acc, { html_url, user }) => acc.concat(`${user.login} ${html_url}`),
     []
   )
 }
@@ -58,6 +58,7 @@ async function main() {
   const { org, repo, state } = pg.opts()
   const pullRequests = await findPullRequests(org, repo, state)
   const rows = formatPullRequests(pullRequests)
+  console.log(repo)
   console.log(rows.join('\n'))
 }
 
