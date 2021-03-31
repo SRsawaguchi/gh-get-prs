@@ -1,0 +1,27 @@
+{
+  "name": "gh-get-prs",
+  "version": "1.0.0",
+  "description": "show pull requests in specific repository on github",
+  "main": "index.js",
+  "scripts": {
+    "lint": "npx eslint index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SRsawaguchi/gh-get-prs.git"
+  },
+  "author": "SRsawaguchi",
+  "bugs": {
+    "url": "https://github.com/SRsawaguchi/gh-get-prs.git/issues"
+  },
+  "homepage": "https://github.com/SRsawaguchi/gh-get-prs.git#readme",
+  "license": "MIT",
+  "dependencies": {
+    "@octokit/rest": "^18.5.2",
+    "commander": "^7.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^7.23.0"
+  }
+}
