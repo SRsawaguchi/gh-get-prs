@@ -10,6 +10,9 @@ username url
 .
 ```
 
+※ブラウザで見るだけで良い場合は、以下のURLにアクセスすればOK。  
+https://github.com/pulls?user=org
+
 ## 使い方
 
 ### GitHubのアクセストークンの設定
